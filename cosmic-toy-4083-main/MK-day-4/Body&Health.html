@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body & Health</title>
+</head>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#sec_navbar{
+        /* border:1px solid red;  */
+        width: 100%;
+        /* height:30px; */
+        padding:10px;
+        padding-left:130px ;
+        background-color: #f6f6f6;
+        
+    }
+    #sec_navbar a{
+        color: #3bc6db;
+        text-decoration: none;
+        margin:40px;
+    }
+    #sec_navbar :hover{
+        text-decoration: underline;
+    }
+.blue{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.bar{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.bar:hover{
+    color: black;
+    background-color: rgb(219, 217, 217);
+}
+#main{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+#side{
+    position: sticky;
+}
+ #content{
+    margin-top: 50px;
+    /* border:1px solid red; */
+    width:auto;
+    height: auto;
+}
+#content>p{
+    font-size: 30px;
+    color: rgb(114, 109, 109);
+}
+#content>div{
+    font-size: 13px;
+}
+#summary{
+    display: flex;
+    /* border: 1px solid teal; */
+    width:800px;
+    height: auto;
+    padding: 10px;
+    margin:20px;
+    background-color:rgb(240, 240, 240);
+    border-radius: 10px;
+    color:rgb(56, 50, 50);
+    
+    
+}
+#summary div{
+ font-size: 20px;
+   padding:0 10px;
+
+}
+#weight{
+display: flex;
+
+}
+#weight>div+div{
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+#summary+p{
+    font-size: 20px;
+}
+.summaryDown{
+    display: flex;
+    /* border: 1px solid teal; */
+    width:400px;
+    height: auto;
+    padding: 10px;
+    margin:20px;
+    background-color:rgb(240, 240, 240);
+    border-radius: 10px;
+    color:rgb(56, 50, 50);
+}
+.summaryDown div{
+    font-size: 20px;
+   padding:0 10px;
+}
+#ill{
+    display: flex;
+}
+#ill div{
+    padding: 40px;
+    background-color: rgb(241, 159, 128);
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#sideImage{
+    display: flex;
+    justify-content: space-between;
+}
+#sideImage div:nth-child(2){
+    background-color: rgb(211, 205, 205);
+    padding:20px 70px;
+}
+#image{
+    border-radius: 10px;
+}
+#image>h3{
+    margin: 20px 0px;
+}
+#image>img{
+    width:300px
+}
+
+
+</style>
+
+<style>
+    /* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.background{
+    height: 53px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 20px; */
+    padding: 10px 0px;
+    background-color:#0e0442 ;
+} 
+#inav{
+width: 100%;
+/* height: 50px; */
+position: relative;
+background-color:transparent; 
+font: 12px lato, Arial, Helvetica, sans-serif;
+color: white;
+display: flex;
+align-items: center;
+padding: 8px;
+z-index: 1000;
+box-sizing: border-box;
+transition: all 0.2s ease-in-out;
+
+}
+#inav > img{
+    height:35px;
+    width:100px;
+    margin-left: 180px;
+    margin-right: 60px;
+     /* padding-left: 280px; */
+    /* padding-right: 80px; */
+    /* padding-bottom: 0px;  */
+}
+#inav{
+    display:flex;
+    align-items: flex-end;
+    gap:20px;
+    align-items: center;
+
+}
+#inav>h3{
+    display:flex;
+    align-items: center;
+    font:10px;
+    /* padding-top:20px; */
+  
+}
+#ncAcc{
+    text-decoration: none;
+    margin-left: 200px;
+}
+#icons{
+    gap:5px;
+    display:flex;
+    height: 35px;
+    width:40px;   
+}
+#icons:hover{
+    color:whitesmoke;   
+}
+#inav a{
+    color:grey;
+    text-decoration: none;
+}
+#inav a:hover{
+    color:whitesmoke;
+}
+#spre{
+    padding-top: 20px;
+    /* border: 1px solid yellow; */
+}
+#img_acc{
+    width: 5%;
+    height: 5%;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+ 
+#div_acc_img{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    /* align-items: center; */
+     gap:0px; 
+}
+.child1{
+height:12px;
+width:12px;
+border-radius: 50%;
+}
+.child{
+/* border: 1px solid white; */
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child > a > img{
+width: 80%;
+height: 70%;
+
+}
+.child3{
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child3> a > img{
+width: 80%;
+height: 70%;
+border-radius: 50%;
+}
+/* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+
+
+/* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(231, 230, 230);
+}
+#nav{
+    margin-left: 150px;
+    
+}
+#nav>a{
+    margin-left: 40px;
+    color: rgb(31, 163, 224);
+    text-decoration: none;
+}
+#nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+
+</style>
+
+<style>
+
+    /* footer section */
+    #footer{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        background: #121451;
+        height: auto;
+        width: 100%;
+        display: flex;
+        
+    }
+   
+   #footerR{
+    /* border: 1px solid red; */
+    width: auto;
+    max-width: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-left: 50px;
+   }
+   #footerL{
+    /* border: 1px solid yellow; */
+    vertical-align: middle;
+    padding: 80px;
+    margin-left: 250px;
+   }
+   #footerL>a>img{
+    height: 50px;
+    padding: 10px;
+    
+   }
+   #footerR>p{
+      color: #BBBBBB;
+   }
+   #footerR>a{
+    text-decoration: none;
+    color: white;
+   }
+   #footerR>img{
+    width: 200px;
+   }
+  
+    
+</style>
+
+<body>
+   <!-- /* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+ -->
+ <div class="background ">
+    <nav id="inav">
+        <img src="https://kcdn.twiikapp.com/images/logo.png"/>
+        <h3><a href="/calender.html" >Exercise log</a></h3>
+        <h3><a href="/MK-day-4/overview.html" >Results</a></h3>
+        <h3><a href="/chlng.html">Challenges</a></h3>
+        <h3><a href="/monis-day-5/friendPage/myfriends.html">Friends</a></h3>
+        <h3><a href="/monis_day-04/groupspage/mygroupsPage/html/mygroup.html">Groups</a></h3>
+        <div id="spre"><h3>
+            <!-- <a href="">email</a>
+                <br> -->
+            <a href="/vikalpday-3/profile.html" id="ncAcc">My accounts</a>
+        </h3></div>
+       
+        </span>
+       
+        <div id="div_acc_img" >
+
+            <div class="child">
+
+                <a  href="">
+                    <img  src="https://kcdn.twiikapp.com/images/no_image.png" alt="No_image">
+                </a>
+            </div>
+
+            <div class="child">
+
+                <a  href="">
+                    <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
+                </a>
+            </div>
+
+            <div class="child3">
+
+                <a  href="">
+                    <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
+                </a>
+            </div>
+            
+          
+
+            <!-- <a  href="">
+                <img  src="	" alt="No_image">
+            </a>
+
+            <a  href="">
+                <img  src="" alt="No_image">
+            </a> -->
+        </div>
+
+        
+    </nav>
+</div>
+    <!-- /* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+
+
+
+
+/* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+-->
+<div id="box">
+    <div id="nav">
+        <a href="overview.html">Overview</a>
+        <a href="training.html">Training</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="Body&Health.html">Body & Health</a>
+    </div>
+</div>
+   
+      
+       <div id="main">
+           <div id="side">
+              <div class="blue">Body & Health</div>
+              <div class="bar" >Summary</div>
+              <div class="bar" >Weight</div>
+              <div class="bar" >Pulse</div>
+              <div class="bar" >Daily form</div>
+              <div class="bar" >Injury/Rest/Index</div>
+              <div class="bar" >Measures</div>           
+           </div>
+        <div id="content">
+            <p id="nchange">Body & Health</p>
+           <div id="summary">
+             <div>Your Weight</div>             
+           </div>
+           <div id="weight">
+                <div>
+                  <img src="https://kcdn.twiikapp.com/images/weight_neutral_large.jpg" alt="">
+                  <p>Total change <span>-3.0Kg</span></p>
+                  <p>Last change : <span>+57Kg</span><span><img src="https://kcdn.twiikapp.com/images/weight_up_small.jpg" alt=""></span></p>
+                </div>
+            <div>
+                <p>Weight 58Kg++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+            </div>
+            
+
+           </div>
+        <div id="sideImage">
+            <div>
+
+                <div class="summaryDown">
+                  <div>Pulse</div>                        
+               </div >
+
+             <p>Pulse rate Normal</p>  
+             <div class="summaryDown">
+             <div>Daily Form</div>                        
+              </div>  
+              <p>Hard To Say <span><p></p></span></p>  
+             <div class="summaryDown">
+              <div>Injury / rest / illness</div> 
+              
+              </div>   
+              <div id="ill">
+                <div>
+                    <img src="https://kcdn.twiikapp.com/images/wheelchair.png" alt="">
+                    <h2>4</h2>
+                </div>
+                <div>
+                    <img src="https://kcdn.twiikapp.com/images/bed.png" alt="">
+                    <h2>2</h2>
+                </div>
+
+                <div>
+                    <img src="https://kcdn.twiikapp.com/images/pills.png" alt="">
+                     <h2>6</h2>
+                </div>                    
+                   
+             </div>  
+            </div>
+             
+          
+          <div id="image">
+            <h3>Measurements</h3>
+            <p>Total change of my registered measures.</p>
+            <img src="https://www.researchgate.net/publication/329936843/figure/fig2/AS:708424606162949@1545912996157/Body-measurements-Ten-body-measurements-for-the-cloth-skin-displacement-modeling-and-the.png" alt="">
+          </div>
+
+        </div>
+           
+   
+               
+        </div>
+        </div>
+
+
+        <div>
+            <div id="footer">
+                <div id="footerR">
+                    <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+                    <p>All rights reserved © 2002 - 2022</p>
+                    <p>Developed by Wellnesstech Labs International AB</p>
+                    <a href=""><p>Contact Us - Terms & Condition</p></a>
+                </div>
+                <div id="footerL">
+                    <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+                    <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+                    <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+                    <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+                    <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+                </div>
+            </div>
+        </div>
+           
+   
+          
+   </body>
+   </html>
+   <script ></script>

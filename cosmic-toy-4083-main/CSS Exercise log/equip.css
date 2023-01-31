@@ -1,0 +1,291 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(231, 230, 230);
+}
+#nav{
+    margin-left: 150px;
+    
+}
+#nav>a{
+    margin-left: 40px;
+    color: rgb(31, 163, 224);
+    text-decoration: none;
+}
+#nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+#neContainer{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#neEquip{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#neEquip>div{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#neCreate{
+    text-align: center;
+}
+#neCreate>p:nth-child(1){
+    font-size: 28px;
+    margin-bottom: 7px;
+    color: rgb(70, 70, 70);
+}
+#neCreate>p:nth-child(2){
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(94, 93, 93);
+}
+#neCreate>input{
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+}
+#neCreate>select{
+    margin-bottom: 15px;
+    height: 30px;
+    width: 300px;
+}
+#neCreate>button{
+   padding: 10px 15px; 
+   margin-left: 10px;
+   background-color: white;
+}
+#neSave{
+    border: 2px solid rgb(125, 194, 108);
+}
+#neSave:hover{
+    border: 2px solid rgb(33, 150, 4);
+}
+#neCancel{
+    border: 2px solid grey;
+}
+#neCancel:hover{
+    border: 2px solid rgb(20, 20, 20);
+}
+#neCreate>#neCheck{
+    width: 15px;
+    margin-top: 10px;
+}
+#nePrefer{
+    color: rgb(44, 43, 43);
+    margin-top: 20px;
+}
+
+#neUploadImage>h4{
+    margin-bottom: 10px;
+}
+#neUploadImage>p{
+    margin-bottom: 10px;
+}
+#neUploadImage>div{
+    margin-bottom: 20px;
+}
+#neUploadbtn1{
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    background-color: white;
+    border: 2px solid gray;
+}
+#neUploadbtn1:hover{
+    border: 2px solid black;
+}
+#neUploadbtn2{
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 2px solid gray;
+}
+#neUploadbtn2:hover{
+    border: 2px solid black;
+}
+
+
+/* ---------------------------Blue Navbar--------------------------- */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.background{
+    height: 53px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 20px; */
+    padding: 10px 0px;
+    background-color:#0e0442 ;
+} 
+#inav{
+width: 100%;
+/* height: 50px; */
+position: relative;
+background-color:transparent; 
+font: 12px lato, Arial, Helvetica, sans-serif;
+color: white;
+display: flex;
+align-items: center;
+padding: 8px;
+z-index: 1000;
+box-sizing: border-box;
+transition: all 0.2s ease-in-out;
+
+}
+#inav > img{
+    height:35px;
+    width:100px;
+    margin-left: 180px;
+    margin-right: 60px;
+     /* padding-left: 280px; */
+    /* padding-right: 80px; */
+    /* padding-bottom: 0px;  */
+}
+#inav{
+    display:flex;
+    align-items: flex-end;
+    gap:20px;
+    align-items: center;
+
+}
+#inav>h3{
+    display:flex;
+    align-items: center;
+    font:10px;
+    /* padding-top:20px; */
+  
+}
+#ncAcc{
+    text-decoration: none;
+    margin-left: 200px;
+}
+#icons{
+    gap:5px;
+    display:flex;
+    height: 35px;
+    width:40px;   
+}
+#icons:hover{
+    color:whitesmoke;   
+}
+#inav a{
+    color:grey;
+    text-decoration: none;
+}
+#inav a:hover{
+    color:whitesmoke;
+}
+#spre{
+    padding-top: 20px;
+    /* border: 1px solid yellow; */
+}
+#img_acc{
+    width: 5%;
+    height: 5%;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+ 
+#div_acc_img{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    /* align-items: center; */
+     gap:0px; 
+}
+.child1{
+height:12px;
+width:12px;
+border-radius: 50%;
+}
+.child{
+/* border: 1px solid white; */
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child > a > img{
+width: 80%;
+height: 70%;
+
+}
+.child3{
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child3> a > img{
+width: 80%;
+height: 70%;
+border-radius: 50%;
+}
+
+ /*-------------------------------- footer section------------------------------------------ */
+ #footer{
+    /* position: absolute; */
+    left: 0px;
+    bottom: 0px;
+    background: #121451;
+    height: auto;
+    width: 100%;
+    display: flex;
+    
+}
+
+#footerR{
+/* border: 1px solid red; */
+width: auto;
+max-width: auto;
+padding: 50px;
+box-sizing: border-box;
+vertical-align: middle;
+margin-left: 50px;
+}
+#footerL{
+/* border: 1px solid yellow; */
+vertical-align: middle;
+padding: 80px;
+margin-left: 250px;
+}
+#footerL>a>img{
+height: 50px;
+padding: 10px;
+
+}
+#footerR>p{
+  color: #BBBBBB;
+}
+#footerR>a{
+text-decoration: none;
+color: white;
+}
+#footerR>img{
+width: 200px;
+}

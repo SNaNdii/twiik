@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="/login/style.css">
+    <title>Contacts</title>
+    
+<link rel="stylesheet" type="text/css" href="https://www.gstatic.com/recaptcha/releases/3TZgZIog-UsaFDv31vC4L9R_/styles__ltr.css">        
+        
+    </style>
+    <style>
+         * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+  }
+  #background {
+    /* background-image: url(https://www.shapelink.com/images/startpage.jpg); */
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 75px 0px 50px;
+    z-index: 1;
+  }
+    .navbar {
+    width: 100%;
+    position: fixed;
+    background-color:black; 
+    font: 12px lato, Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    margin-top: -75px;
+  }
+  .bgColor{
+    background-color:rgb(41,41,41);
+    opacity: 0.9;
+    color:black;
+    
+  }
+  .nav {
+    width: 50%;
+    margin-left: 600px;
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 50px;
+    font-size: 20px;
+  }
+  .navbar > div > img {
+    width: 35%;
+    /* border: 1px solid green; */
+    margin-left: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .nav > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+  }
+  .nav > p:hover {
+    text-decoration: underline;
+  }
+  
+  .nav > button {
+    width: 30%;
+    height: 45px;
+    color: #ffffff;
+    background-color: #5a3bdb;
+    border-radius: 30px;
+    padding: 8px 10px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .nav > button:hover {
+    background-color: #673ab7;
+  }
+  .bar {
+    width: 30%;
+  }
+  .bar a img {
+    width: 50%;
+  }
+    </style>
+     <style>
+
+        /* footer section */
+        #footer{
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+            background: #121451;
+            height: auto;
+            width: 100%;
+            display: flex;
+            
+        }
+       
+       #footerR{
+        /* border: 1px solid red; */
+        width: auto;
+        max-width: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin-left: 50px;
+       }
+       #footerL{
+        /* border: 1px solid yellow; */
+        vertical-align: middle;
+        padding: 80px;
+        margin-left: 250px;
+       }
+       #footerL>a>img{
+        height: 50px;
+        padding: 10px;
+        
+       }
+       #footerR>p{
+          color: #BBBBBB;
+       }
+       #footerR>a{
+        text-decoration: none;
+        color: white;
+       }
+       #footerR>img{
+        width: 200px;
+       }
+      
+        
+    </style>
+</head>
+<body>
+    <div>
+        <!-- append Navbar -->
+        <div id="background">
+            <!-- start navbar-->
+            <div id="snav" class="navbar">
+                <div class="bar">
+                    <img src="https://kcdn.twiikapp.com/images/logo.png">
+                </div>
+                <div class="nav">
+                <p><a href="/Get the app/app.html">Get the app</a></p>
+                <p><a href="/contacts/contacts.html">Contact</a></p>
+                <p id="ModalBtn"><a>Login</a></p>
+                <button><a href="/signup.html">Create Account</a></button>
+                </div>
+            </div>
+            <!-- login pop up -->
+            <div id="simpleModal" class="modal">
+                <div id="modal-content">
+                  <span class="closeBtn">&times;</span>
+                  <p id="log1">LOGIN</p>
+                  <div id="logDiv">
+                    <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+                    
+                  <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+                 
+                  <button id="loginBtn" onclick="login1()">Login</button>
+                  </div>
+                  <div id="LoginFc">Login with Facebook</div>
+                </div>
+              </div>
+    </div>
+    <div id="topsec">
+        <div>
+         <h1>Are you not a member?</h1>
+         <button>Create account</button>
+         <button>Get the app</button>
+         </div>        
+    </div>
+    <section id="midsec">
+        <div id="midfdiv">
+            <h1> CONTACT TWIIK</h1>
+            <div id="underline"></div>
+            <p>
+                If you want to contact us, please use the form below or send an e-mail to
+                <br> appsupport@twiik.me
+            </p>            
+        
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="email" id="email" placeholder="Email address"><br>
+            <input type="text" id="message" placeholder="Message"><br>
+           
+            <div id="rc-anchor-container" class="rc-anchor rc-anchor-normal rc-anchor-light"><div id="recaptcha-accessible-status" class="rc-anchor-aria-status" aria-hidden="true">Recaptcha requires verification. </div><div class="rc-anchor-error-msg-container" style="display:none"><span class="rc-anchor-error-msg" aria-hidden="true"></span></div><div class="rc-anchor-content"><div class="rc-inline-block"><div class="rc-anchor-center-container"><div class="rc-anchor-center-item rc-anchor-checkbox-holder"><span class="recaptcha-checkbox goog-inline-block recaptcha-checkbox-unchecked rc-anchor-checkbox" role="checkbox" aria-checked="false" id="recaptcha-anchor" tabindex="0" dir="ltr" aria-labelledby="recaptcha-anchor-label"><div class="recaptcha-checkbox-border" role="presentation"></div><div class="recaptcha-checkbox-borderAnimation" role="presentation"></div><div class="recaptcha-checkbox-spinner" role="presentation"><div class="recaptcha-checkbox-spinner-overlay"></div></div><div class="recaptcha-checkbox-checkmark" role="presentation"></div></span></div></div></div><div class="rc-inline-block"><div class="rc-anchor-center-container"><label class="rc-anchor-center-item rc-anchor-checkbox-label" aria-hidden="true" role="presentation" id="recaptcha-anchor-label"><span aria-live="polite" aria-labelledby="recaptcha-accessible-status"></span>I'm not a robot</label></div></div>
+        </div><div class="rc-anchor-normal-footer"><div class="rc-anchor-logo-portrait" aria-hidden="true" role="presentation"><div class="rc-anchor-logo-img rc-anchor-logo-img-portrait"></div><div class="rc-anchor-logo-text">reCAPTCHA</div></div><div class="rc-anchor-pt"><a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a><span aria-hidden="true" role="presentation"> - </span><a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a></div></div></div>
+         <button onclick="Send()">Send</button>
+        </div>
+
+    </section>
+    <!-- footer sec -->
+    <div id="footer">
+        <div id="footerR">
+            <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+            <p>All rights reserved © 2002 - 2022</p>
+            <p>Developed by Wellnesstech Labs International AB</p>
+            <a href=""><p>Contact Us - Terms & Condition</p></a>
+        </div>
+        <div id="footerL">
+            <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+            <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+            <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+            <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+            <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="contacts.js"></script>
+<script>
+    function changeBg(){
+    var navbar = document.getElementById('snav')
+    var scrollValue = window.scrollY;
+    // console.log(scrollValue);
+
+    if(scrollValue <150 ){
+        navbar.classList.remove('bgColor')
+    }else{
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll',changeBg)
+</script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>
+  <script src="./login/login.js"></script>

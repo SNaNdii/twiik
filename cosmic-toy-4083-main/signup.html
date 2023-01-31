@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainnavbar.css">
+    <link rel="stylesheet" href="login/style.css">
+    <style>
+        #signUpbody{
+            background-color: rgb(18,20,81);
+            text-align: center;
+        }
+        #signUpCode{
+            margin: auto;
+            margin-top: 150px;
+            width: 960px;
+            height: 180px;
+            border: 0px solid black;
+            border-radius: 20px;
+            background-color: rgb(42,44,99);
+            padding: 25px;
+        }
+        #P1{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 36px;
+            color: rgb(255,255,255);
+            text-decoration: solid;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #P2{
+            text-align: center;
+            font-size: 15px;
+            color: rgb(255,255,255);
+            text-decoration: solid;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        #signUpCode>input{
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            border: 0px;
+        }
+        #signUpCode>button{
+            height: 40px;
+            width:87px ;
+            font-size: 16px;
+            border-radius:10px ;
+            border: 0px;
+        }
+        #account{
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255,255,255);
+        }
+        #disclaimer{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255,255,255);
+            margin-top: -50px;
+        }
+        #signUp{
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255,255,255);
+            margin-top: 60px;  
+        }
+        #facebook{
+            border:0px solid black;
+            height: 40px;
+            width: 400px;
+            margin: auto;
+            background-color:rgb(78, 87, 245);
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            display: grid;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        #signEmail{
+            font-size: 15px;
+            color: rgb(255,255,255);
+          gap: 20px;
+        }
+        #Sign_up_form{
+            height: 400px;
+            width: 500px;
+            border: 0px solid black;
+            margin: auto;
+            display: grid;
+            justify-content: space-around;
+        }
+        .Email_signup{
+            height: 40px;
+            width: 400px;
+            text-align: center; 
+            border-radius: 30px
+        }
+        #Submit_signUp{
+            height: 50px;
+            width: 200px;
+            margin: auto;
+            border-radius: 30px; 
+            background-color:rgb(78, 87, 245);
+            font-size: 20px;
+            text-decoration: solid;
+            color: rgb(255,255,255);
+        }
+        .invalid {
+  color: red;
+     }
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+#message {
+  display:none;
+  background: rgb(18,20,81);
+  color: rgb(255,255,255);
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+#footer{
+            /* position: absolute;
+            left: 0px;
+            bottom: 0px; */
+            background: #121451;
+            height: auto;
+            width: 100%;
+            display: flex;
+            
+        }
+       
+       #footerR{
+        /* border: 1px solid red; */
+        width: auto;
+        max-width: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin-left: 50px;
+       }
+       #footerL{
+        /* border: 1px solid yellow; */
+        vertical-align: middle;
+        padding: 80px;
+        margin-left: 250px;
+       }
+       #footerL>a>img{
+        height: 50px;
+        padding: 10px;
+        
+       }
+       #footerR>p{
+          color: #BBBBBB;
+       }
+       #footerR>a{
+        text-decoration: none;
+        color: white;
+       }
+       #footerR>img{
+        width: 200px;
+       }
+
+    </style>
+</head>
+<body id="signUpbody">
+    <div>
+        <div id="background">
+            <!-- start navbar-->
+            <div id="snav" class="navbar">
+                <div class="bar">
+                    <img src="https://kcdn.twiikapp.com/images/logo.png">
+                </div>
+                <div class="nav">
+                <p><a href="/Get the app/app.html">Get the app</a></p>
+                <p><a href="/contacts/contacts.html">Contact</a></p>
+                <p id="ModalBtn"><a>Login</a></p>
+                <button><a href="/signup.html">Create Account</a></button>
+                </div>
+            </div>
+            <!-- login pop up -->
+            <div id="simpleModal" class="modal">
+                <div id="modal-content">
+                  <span class="closeBtn">&times;</span>
+                  <p id="log1">LOGIN</p>
+                  <div id="logDiv">
+                    <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+                    
+                  <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+                 
+                  <button id="loginBtn" onclick="login1()">Login</button>
+                  </div>
+                  <div id="LoginFc">Login with Facebook</div>
+                </div>
+              </div>
+              <!-- ...............navbar end ..............-->
+              <!-- log in pop end  -->
+    </div>
+    <div id="signUpCode">
+        <p id="P1">Do you have a code for TeamBoost?</p>
+        <p id="P2">If you have received a code to join a TeamBoost, then you can create your account here on the web, fill in the code below and click "Proceed".</p>
+        <input type="text" name="" id="" placeholder="Enter Your Code Here">
+        <button>Proceed</button>
+    </div>
+    <p id="account">Create an account in the app!</p>
+    <p id="disclaimer">To be able to use Twiik you need to create an account in the app.</p>
+    <p id="signUp">Sign Up</p>
+    <div id="facebook">Sign up with Facebook</div>
+    <h5 id="signEmail">or sign up with e-mail</h5>
+    <div id="Sign_up_form">
+        <input type="text" name="" id="S_name" placeholder="NAME" class="Email_signup">
+        <input type="text" name="" id="S_email" placeholder="EMAIL" class="Email_signup">
+    <input type="url" name="" id="S_Image" placeholder="IMAGE" class="Email_signup">
+    <input type="password" name="" id="S_Password" placeholder="PASSWORD" class="Email_signup">
+    <input type="password" name="" id="con_password" placeholder="CONFRIM PASSWORD" class="Email_signup">
+    <button id="Submit_signUp" onclick="emailSignup()">Sign Up</button>
+   </div>
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+     <footer>
+        <div id="footer">
+            <div id="footerR">
+                <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+                <p>All rights reserved © 2002 - 2022</p>
+                <p>Developed by Wellnesstech Labs International AB</p>
+                <a href=""><p>Contact Us - Terms & Condition</p></a>
+            </div>
+            <div id="footerL">
+                <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+                <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+                <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+                <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+                <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+            </div>
+        </div>
+     </footer>
+    </div>
+</body>
+
+</html>
+<script src="signup.js"></script>
+<script>
+    function changeBg(){
+    var navbar = document.getElementById('snav')
+    var scrollValue = window.scrollY;
+    // console.log(scrollValue);
+
+    if(scrollValue <150 ){
+        navbar.classList.remove('bgColor')
+    }else{
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll',changeBg)
+</script>
+<script src="login/login.js"></script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>

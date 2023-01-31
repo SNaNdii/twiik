@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<style>
+    #profile_container{
+        width: 980px;
+        height: 485px;
+        border: 0px solid black;
+        margin: auto;
+        display: flex;
+    }
+    #profile_details{
+        width: 200px;
+        height: 485px;
+        border: 0px solid black;
+        }
+    #profile_pic{
+     width: 200px;
+     height: 200px;
+     border: 0px solid red;
+     border-radius: 50%;
+    }
+    #profile_pic>img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    #email_details{
+        height: 45px;
+        border: 1px solid blue;
+        margin-top: 5px;
+        display: grid;
+        background-color: rgb(18,20,81);
+        color: white;
+    }
+    #summary{
+        height: 40px;
+        border: 0px solid gray;
+        background-color: rgb(221,221,221);
+    }
+    #email_logs{
+        border: 0px solid red;
+      height: 130px;
+      display: grid;
+      grid-template-rows: repeat(4,1fr);  
+    }
+    #email_logs>div{
+        border: 0px solid green;
+        color: rgb(173,228,246);
+    }
+    #changeProfile{
+        height: 24px;
+        text-align: center;
+        border: 1px solid gray;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    #email_logs>div:hover{
+        background-color: rgb(221,221,221);
+    }
+    #Side_container{
+        width: 760px;
+        height: 430px;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
+        margin-left: 10px;
+        display: grid;
+        grid-template-rows: 40px 20px 80px 160px 60px
+    }
+    #Side_container>div{
+        border: 0px solid blue;
+    }
+    #sideBaricon{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    #sideBaricon>div{
+    border:0px solid purple;
+    text-align: center;
+    background-color: rgb(238,238,238);
+    }
+    #sideBaricon>div:hover{
+        background-color: rgb(221,221,221);
+    }
+    .icon_div{
+        border: 0px solid black;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #sideBaricon>div:hover{
+        background-color: rgb(173,228,246);
+    }
+    .icon_div>img{
+        width: 60%;
+    }
+    #name_side_bar{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    #sidebar_bottom{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #sidebar_bottom>div{
+        border:0px solid black;
+    }
+   
+    #Workout_details{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);  
+    }
+    #Workout_details>div{
+        border: 0px solid green;
+    }
+    #workoutDay{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+    }
+   
+    #workoutDay>div{
+        border: 0px solid blue;
+        text-align: center;
+    }
+    #workoutDay>div:hover{
+        background-color: rgb(173,228,246) 
+    }
+    #about{
+        width: 236px;
+        border: 0px solid black;
+        margin-left: 500px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        background-color:rgb(221,221,221) ;
+    }
+    /* footer css start */
+       /* footer section */
+       #footer{
+            /* position: absolute;
+            left: 0px;
+            bottom: 0px; */
+            background: #121451;
+            height: auto;
+            width: 100%;
+            display: flex;
+            
+        }
+       
+       #footerR{
+        /* border: 1px solid red; */
+        width: auto;
+        max-width: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin-left: 50px;
+       }
+       #footerL{
+        /* border: 1px solid yellow; */
+        vertical-align: middle;
+        padding: 80px;
+        margin-left: 250px;
+       }
+       #footerL>a>img{
+        height: 50px;
+        padding: 10px;
+        
+       }
+       #footerR>p{
+          color: #BBBBBB;
+       }
+       #footerR>a{
+        text-decoration: none;
+        color: white;
+       }
+       #footerR>img{
+        width: 200px;
+       }
+      /* footer css end */
+      .background{
+    height: 53px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 20px; */
+    padding: 10px 0px;
+    background-color:#0e0442 ;
+} 
+#inav{
+width: 100%;
+/* height: 50px; */
+position: relative;
+background-color:transparent; 
+font: 12px lato, Arial, Helvetica, sans-serif;
+color: white;
+display: flex;
+align-items: center;
+padding: 8px;
+z-index: 1000;
+box-sizing: border-box;
+transition: all 0.2s ease-in-out;
+
+}
+#inav > img{
+    height:35px;
+    width:100px;
+    margin-left: 180px;
+    margin-right: 60px;
+     /* padding-left: 280px; */
+    /* padding-right: 80px; */
+    /* padding-bottom: 0px;  */
+}
+#inav{
+    display:flex;
+    align-items: flex-end;
+    gap:20px;
+    align-items: center;
+
+}
+#inav>h3{
+    display:flex;
+    align-items: center;
+    font:10px;
+    /* padding-top:20px; */
+  
+}
+#ncAcc{
+    text-decoration: none;
+    margin-left: 200px;
+}
+#icons{
+    gap:5px;
+    display:flex;
+    height: 35px;
+    width:40px;   
+}
+#icons:hover{
+    color:whitesmoke;   
+}
+#inav a{
+    color:grey;
+    text-decoration: none;
+}
+#inav a:hover{
+    color:whitesmoke;
+}
+#spre{
+    padding-top: 20px;
+    /* border: 1px solid yellow; */
+}
+#img_acc{
+    width: 5%;
+    height: 5%;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+ 
+#div_acc_img{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-left: 40px;
+    /* align-items: center; */
+     gap:0px; 
+}
+.child1{
+height:12px;
+width:12px;
+border-radius: 50%;
+}
+.child{
+/* border: 1px solid white; */
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child > a > img{
+width: 80%;
+height: 70%;
+
+}
+.child3{
+width: 33%;
+display: flex;
+padding: 2px;
+justify-content: center;
+align-items: center;
+
+}
+.child3> a > img{
+width: 80%;
+height: 70%;
+border-radius: 50%;
+}
+/* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+
+
+/* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(231, 230, 230);
+}
+#nav{
+    margin-left: 150px;
+    
+}
+#nav>a{
+    margin-left: 40px;
+    color: rgb(31, 163, 224);
+    text-decoration: none;
+}
+#nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+
+   
+</style>
+<body>
+    <!-- navmain html start -->
+  <div>
+    <div class="background ">
+        <nav id="inav">
+            <img src="https://kcdn.twiikapp.com/images/logo.png"/>
+            <h3><a href="/calender.html" >Exercise log</a></h3>
+            <h3><a href="/MK-day-4/overview.html" >Results</a></h3>
+            <h3><a href="/chlng.html">Challenges</a></h3>
+            <h3><a href="/monis-day-5/friendPage/myfriends.html">Friends</a></h3>
+            <h3><a href="/monis_day-04/groupspage/mygroupsPage/html/mygroup.html">Groups</a></h3>
+            <div id="spre"><h3>
+                <!-- <a href="">email</a>
+                    <br> -->
+                <a href="/vikalpday-3/profile.html" id="ncAcc">My accounts</a>
+            </h3></div>
+           
+            </span>
+           
+            <div id="div_acc_img" >
+
+                <div class="child">
+
+                    <a  href="">
+                        <img  src="https://kcdn.twiikapp.com/images/no_image.png" alt="No_image">
+                    </a>
+                </div>
+
+                <div class="child">
+
+                    <a  href="">
+                        <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
+                    </a>
+                </div>
+
+                <div class="child3">
+
+                    <a  href="">
+                        <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
+                    </a>
+                </div>
+                
+              
+
+                <!-- <a  href="">
+                    <img  src="	" alt="No_image">
+                </a>
+
+                <a  href="">
+                    <img  src="" alt="No_image">
+                </a> -->
+            </div>
+
+            
+        </nav>
+    </div>
+        <!-- /* <.................SAMRUDHHI TOP (BLUE) NAVBAR...................> */
+
+
+
+
+ /* <...................NANDITA 2ND (WHITE) NAVBAR....................> */
+ -->
+    <div id="box">
+        <div id="nav">
+            <a href="/calender.html">Show Calender</a>
+            <a href="/thing.html">My Things</a>
+            <a href="/rout.html">Routines</a>
+            <a href="/track.html">Tracks</a>
+            <a href="/equip.html">Equipment</a>
+            <a href="/import.html">Import Training</a>
+        </div>
+    </div>
+<!-- /* <...
+  </div>
+    <!-- navmain html end -->
+    <!-- nandita html star  -->
+   
+    <div id="profile_container">
+        <div id="profile_details">
+            <div id="profile_pic">
+                <img id="profileImg" src="	https://kcdn.twiikapp.com/images/no_image.png" alt="">
+            </div>
+            <div id="email_details">
+                <span id="email_local">vikalp</span>
+            </div>
+            <div id="summary">Summary</div>
+            <div id="email_logs">
+                <div>Exercise Log</div>
+                <div>Blog</div>
+                <div>Challenges</div>
+                <div>Competitions</div>
+            </div>
+            <div id="changeProfile">Change profile</div>
+        </div>
+        <div id="Side_container">
+            <div id="email_side_bar">
+                <h3 id="sidebar_email"></h3>
+            </div>
+            <div id="name_side_bar">
+                <p id="sidebar_name"></p>
+            </div>
+            <div id="sideBaricon">
+                <div>Workouts
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/workouts.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Challgers
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/medal.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Competitions
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/contest.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Friends
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/friend.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Groups
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/group.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    Equipments
+                    <div class="icon_div">
+                        <img src="https://kcdn.twiikapp.com/images/profile/group.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar_bottom">
+                <div>
+                    Tained time per week
+                </div>
+                <div id="Workout_details">
+                    <div id="workoutDay">
+                        <div>Last 30 days</div>
+                        <div>Workouts</div>
+                        <div>Km</div>
+                    </div>
+                    <div>Common activities</div>
+                </div>
+            </div>
+            <div id="about">
+                About <span id="aboutEmail"></span>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerR">
+            <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+            <p>All rights reserved © 2002 - 2022</p>
+            <p>Developed by Wellnesstech Labs International AB</p>
+            <a href=""><p>Contact Us - Terms & Condition</p></a>
+        </div>
+        <div id="footerL">
+            <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+            <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+            <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+            <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+            <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let loginData=JSON.parse(localStorage.getItem("logindata"))
+    console.log(loginData)
+    let {email}=loginData;
+    let {username}=loginData;
+    let {image} =loginData;
+    console.log(image)
+    console.log(username)
+    document.getElementById("sidebar_email").innerText=email;
+    document.getElementById("sidebar_name").innerText=username;
+    document.getElementById("email_local").innerText=email;
+    document.getElementById("aboutEmail").innerText=email;
+    document.getElementById("profileImg").src=image
+
+</script>

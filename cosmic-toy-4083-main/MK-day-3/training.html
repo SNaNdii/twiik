@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+</head>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#sec_navbar{
+        /* border:1px solid red;  */
+        width: 100%;
+        /* height:30px; */
+        padding:10px;
+        padding-left:130px ;
+        background-color: #f6f6f6;
+        
+    }
+    #sec_navbar a{
+        color: #3bc6db;
+        text-decoration: none;
+        margin:40px;
+    }
+    #sec_navbar :hover{
+        text-decoration: underline;
+    }
+.blue{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.bar{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.bar:hover{
+    color: black;
+    background-color: rgb(219, 217, 217);
+}
+#main{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+ #content{
+    margin-top: 50px;
+    border:1px solid red;
+    width:200px;
+    height: 100px;
+}
+#content>p{
+    font-size: 30px;
+    color: rgb(114, 109, 109);
+}
+#content>div{
+    font-size: 13px;
+}
+
+
+
+
+</style>
+<body>
+  
+    <div id="sec_navbar">
+        <a href="/cosmic-toy-4083/Results/overview.html">Overview</a>
+        <a href="/cosmic-toy-4083/MK-day-3/training.html">Training</a>
+        <a href="">Nutrition</a>
+        <a href="">Body & Health</a>
+        
+
+    </div>
+   
+      
+       <div id="main">
+           <div id="side">
+
+              <div class="blue">WORKOUTS</div>
+              <div class="bar" onclick="ncardio()">Total</div>
+              <div class="bar" onclick="ncardioGym()">Workout List</div>
+              <div class="bar" onclick="nGymClass()">Statistics by track</div>
+              <div class="bar" onclick="nlift()">Equipments</div>
+              <div class="bar" onclick="nsports()">Steps</div>
+
+              <div class="blue">Per TYPE</div>              
+              <div class="bar">Cardio</div>              
+              <div class="bar">Weight Lifting</div>          
+              <div class="bar">Cardo Gym</div>
+              <div class="bar">Gym Class</div>
+              <div class="bar">Other Sports</div>
+            
+           </div>
+           <div id="content">
+               <p id="nchange">Total Training</p>
+            </div>
+            <div id="">
+
+            </div>
+   
+                   <table>
+                       <tbody>
+   <!---------- Append list to tbody ------------>
+                       </tbody>
+                   </table>
+               </div>
+   
+   
+           </div>
+       </div>
+   </body>
+   </html>
+   <script ></script>

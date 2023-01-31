@@ -1,0 +1,202 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .background{
+        height: 42px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        /* padding-bottom: 20px; */
+        padding: 10px 0px;
+        background-color:#041b5c ;
+    } 
+    #inav{
+    width: 100%;
+    /* height: 50px; */
+    position: fixed;
+    background-color:transparent; 
+    font: 12px lato, Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    
+    }
+    #inav > img{
+       
+        height:35px;
+        width:100px;
+        padding-left: 280px;
+        padding-right: 80px;
+        padding-bottom: 0px;
+    }
+    #inav{
+        display:flex;
+        align-items: flex-end;
+        gap:20px;
+        align-items: center;
+
+    }
+    #inav>p{
+        display:flex;
+        align-items: center;
+        font:10px;
+        padding-top:20px;
+      
+    }
+    p{
+        font-size: 18px;
+        text-decoration: none;
+        
+    }
+    #icons{
+        gap:5px;
+        display:flex;
+        height: 35px;
+        width:40px;   
+    }
+    #icons:hover{
+        color:whitesmoke;   
+    }
+    #inav a{
+        color:grey;
+        text-decoration: none;
+    }
+    p:hover{
+       color:whitesmoke;
+    }
+    #inav a:hover{
+        color:whitesmoke;
+    }
+    #spre{
+        padding-top: 20px;
+        /* border: 1px solid yellow; */
+    }
+    #img_acc{
+        width: 5%;
+        height: 5%;
+        margin-left: -10px;
+        border-radius: 50%;
+    }
+     
+    #div_acc_img{
+        /* border: 2px solid red; */
+        display: flex;
+        width: 100px;
+        height: 50px;
+        margin-left: 40px;
+        /* align-items: center; */
+         gap:0px; 
+    }
+   .child1{
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+   }
+   .child{
+    /* border: 1px solid white; */
+    width: 33%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .child > a > img{
+    width: 80%;
+    height: 70%;
+
+   }
+   .child3{
+    width: 33%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .child3> a > img{
+    width: 80%;
+    height: 70%;
+    border-radius: 50%;
+   }
+    
+
+
+    /* .......................footer ....................*/
+
+</style>
+<body>
+    <div class="background ">
+        <nav id="inav">
+            
+            <img src="https://kcdn.twiikapp.com/images/logo.png"/>
+        
+            <p><a href="" >Exercise log</a></p>
+            <p><a href="" >Results</a></p>
+            <p><a href="">Challenges</a></p>
+            <p><a href="">Friends</a></p>
+            <p><a href="">Groups</a></p>
+            <div id="spre"><p>
+                <!-- <a href="">email</a>
+                    <br> -->
+                <a href="">My accounts</a>
+            </p></div>
+           
+            </span>
+           
+            <div id="div_acc_img" >
+
+                <div class="child">
+
+                    <a  href="">
+                        <img  src="https://kcdn.twiikapp.com/images/no_image.png" alt="No_image">
+                    </a>
+                </div>
+
+                <div class="child">
+
+                    <a  href="">
+                        <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
+                    </a>
+                </div>
+
+                <div class="child3">
+
+                    <a  href="">
+                        <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
+                    </a>
+                </div>
+                
+              
+
+                <!-- <a  href="">
+                    <img  src="	" alt="No_image">
+                </a>
+
+                <a  href="">
+                    <img  src="" alt="No_image">
+                </a> -->
+            </div>
+
+            
+        </nav>
+    </div>
+</body>
+</html>

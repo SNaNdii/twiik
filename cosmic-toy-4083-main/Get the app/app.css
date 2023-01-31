@@ -1,0 +1,44 @@
+#top{
+    width:100%;
+    height:300px;
+    background-color:rgb(61, 61, 61) ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    position:relative;
+    }
+    #mid{
+        width:25%;
+        position:absolute;
+        top:350px;
+        left:260px;
+    }
+   
+#details{
+    /* border: 1px solid teal; */
+    width: 600px;
+    height: 400px;
+    margin-left:55%;
+    margin-top:100px;
+    }
+#details h2{
+        font-size:20px ;
+        font-weight: bold;
+        
+    }
+#underline{
+    border:2px solid rgb(94, 94, 255)  ;
+    width:70px;
+    margin-top: 20px;
+
+}
+#details p{
+    font-size: large;
+    margin: 50px 0;
+}
+#details img{
+    margin-top: 30px;
+    width:200px;
+    height: 70px;
+}

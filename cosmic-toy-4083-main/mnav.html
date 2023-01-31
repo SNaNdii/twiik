@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="./login/style.css">
+    
+</head>
+<style>
+    body{
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+  }
+  #background {
+    /* background-image: url(https://www.shapelink.com/images/startpage.jpg); */
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 75px 0px 50px;
+    z-index: 1;
+  }
+    .navbar {
+    width: 100%;
+    position: fixed;
+    background-color:black; 
+    font: 12px lato, Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    margin-top: -75px;
+  }
+  .bgColor{
+    background-color:rgb(41,41,41);
+    opacity: 0.9;
+    color:black;
+    
+  }
+  .nav {
+    width: 50%;
+    margin-left: 600px;
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 50px;
+    font-size: 20px;
+  }
+  .navbar > div > img {
+    width: 35%;
+    /* border: 1px solid green; */
+    margin-left: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .nav > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+  }
+  .nav > p:hover {
+    text-decoration: underline;
+  }
+  
+  .nav > button {
+    width: 30%;
+    height: 45px;
+    color: #ffffff;
+    background-color: #5a3bdb;
+    border-radius: 30px;
+    padding: 8px 10px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .nav > button:hover {
+    background-color: #673ab7;
+  }
+  .bar {
+    width: 30%;
+  }
+  .bar a img {
+    width: 50%;
+  }
+</style>
+<body>
+    <div id="background">
+        <!-- start navbar-->
+        <div id="snav" class="navbar">
+            <div class="bar">
+                <img src="https://kcdn.twiikapp.com/images/logo.png">
+            </div>
+            <div class="nav">
+            <p><a href="">Get the app</a></p>
+            <p><a href="">Contact</a></p>
+            <p id="ModalBtn"><a>Login</a></p>
+            <button><a href="">Create Account</a></button>
+            </div>
+        </div>
+        <!-- login pop up -->
+        <div id="simpleModal" class="modal">
+            <div id="modal-content">
+              <span class="closeBtn">&times;</span>
+              <p id="log1">LOGIN</p>
+              <div id="logDiv">
+                <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+                
+              <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+             
+              <button id="loginBtn" onclick="login1()">Login</button>
+              </div>
+              <div id="LoginFc">Login with Facebook</div>
+            </div>
+          </div>
+          <!-- ...............navbar end ..............-->
+          <!-- log in pop end  -->
+</body>
+</html>
+<script>
+    function changeBg(){
+    var navbar = document.getElementById('snav')
+    var scrollValue = window.scrollY;
+    // console.log(scrollValue);
+
+    if(scrollValue <150 ){
+        navbar.classList.remove('bgColor')
+    }else{
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll',changeBg)
+</script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>
+  <script src="./login/login.js"></script>

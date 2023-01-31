@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+       /* ......................... appnav................ */
+       *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .background{
+        height: 42px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        /* padding-bottom: 20px; */
+        padding: 10px 0px;
+        background-color:#041b5c ;
+    } 
+    #inav{
+    width: 100%;
+    /* height: 50px; */
+    position:relative;
+    background-color:transparent; 
+    font: 12px lato, Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    
+    }
+    #inav > img{
+       
+        height:35px;
+        width:100px;
+        padding-left: 280px;
+        padding-right: 80px;
+        padding-bottom: 0px;
+    }
+    #inav{
+        display:flex;
+        align-items: flex-end;
+        gap:20px;
+        align-items: center;
+
+    }
+    #inav>.plogo{
+        display:flex;
+        align-items: center;
+        font:10px;
+        padding-top:20px;
+      
+    }
+    .plogo{
+        font-size: 18px;
+        text-decoration: none;
+        
+    }
+    #icons{
+        gap:5px;
+        display:flex;
+        height: 35px;
+        width:40px;   
+    }
+    #icons:hover{
+        color:whitesmoke;   
+    }
+    #inav a{
+        color:grey;
+        text-decoration: none;
+    }
+    .plogo:hover{
+       color:whitesmoke;
+    }
+    #inav a:hover{
+        color:whitesmoke;
+    }
+    #spre{
+        padding-top: 10px;
+        /* border: 1px solid yellow; */
+    }
+    #img_acc{
+        width: 5%;
+        height: 5%;
+        margin-left: -10px;
+        border-radius: 50%;
+    }
+     
+    #div_acc_img{
+        /* border: 2px solid red; */
+        display: flex;
+        width: 100px;
+        height: 50px;
+        margin-left: 40px;
+        /* align-items: center; */
+         gap:0px; 
+    }
+   .child1{
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+   }
+   .child{
+    /* border: 1px solid white; */
+    width: 33%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .child > a > img{
+    width: 80%;
+    height: 70%;
+
+   }
+   .child3{
+    width: 33%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .child3> a > img{
+    width: 80%;
+    height: 70%;
+    border-radius: 50%;
+   }
+   /* ................................navbar complete............... */
+        #sC_main-box{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: auto;
+            width: 68%;
+            /* border: 0.5px solid rgb(220, 216, 216);
+            border-radius: 5px; */
+        }
+        #sC_main-box>div{
+            border: 0.5px solid rgb(220, 216, 216);
+            padding: 5px;
+           
+        }
+        .sc_box1{
+            background-color: #e3e6e3;
+            text-align: center;
+            height: 110px;
+            margin-top: 0px;
+        }
+        .sc_box1 p{
+            margin-bottom: 0px;
+
+        }
+        .sc_box1 img {
+            width: 90px;
+            text-align: center;
+           
+        }
+        .sc_box2{
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;  
+         background-color: #e3e6e3; 
+         font-size: 12px;
+        }
+        .sc_p{
+            color: rgb(11, 244, 244);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sc_p:hover{
+            color: black;
+            cursor: pointer;
+
+        }
+        .sc_btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sc_btn button{
+            width: 121px;
+            height: 30px;
+            margin-right: 2px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .sc_btn button:nth-child(1)
+        {
+            border: 2px solid green;
+        }
+        .sc_btn button:nth-child(2)
+        {
+            border: 2px solid;
+        }
+
+   #info{
+    border: 1px solid #e3e6e3;
+    width: 68%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 100px;
+    background-color: rgb(244, 238, 238);
+    /* margin-bottom: 5px;
+     */
+  }
+  
+  #infobox{
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 0 355px 10px 15px;
+  }
+/* .................footer section.......................... */
+/* footer section */
+#footer{
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+            background: #121451;
+            height: auto;
+            width: 100%;
+            display: flex;
+            margin-top: 50px;
+            
+        }
+       
+       #footerR{
+        /* border: 1px solid red; */
+        width: auto;
+        max-width: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        margin-left: 50px;
+       }
+       #footerL{
+        /* border: 1px solid yellow; */
+        vertical-align: middle;
+        padding: 80px;
+        margin-left: 250px;
+       }
+       #footerL>a>img{
+        height: 50px;
+        padding: 10px;
+        
+       }
+       #footerR>p{
+          color: #BBBBBB;
+       }
+       #footerR>a{
+        text-decoration: none;
+        color: white;
+       }
+       #footerR>img{
+        width: 200px;
+       }
+      
+       /* ..........................internal nav...........................  */
+    #sc_nav {
+    width: 100%;
+    margin:auto;
+    display: flex;
+    /* border: 1px solid red;  */
+    gap: 30px;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(207, 200, 200);
+    color:black;
+    height: auto;
+    
+  }
+  #sc_nav>p:hover{
+     color:rgb(16, 240, 248);
+     text-decoration: underline;
+  }
+  #sc_nav>p{
+    font-size: 20px;
+    padding-top:20px;
+    /* font:rgb(16, 240, 248) */
+  }
+  #sc_chl{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:230px;
+    margin-bottom: 15px;
+    margin:auto;
+    color:rgb(77, 75, 75);
+    font-family: lato, Arial, Helvetica, sans-serif;
+  }
+   
+  /* .......................slideshow................... */
+     /* *{
+        box-sizing: border-box
+      } */
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      .sc_slideimg {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 200px;
+        position: relative;
+        margin: auto;
+      }
+      
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+       .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+       .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      } 
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      } 
+      /* On smaller screens, decrease text size */
+       @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+ 
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="background ">
+            <nav id="inav">
+                
+                <img src="https://kcdn.twiikapp.com/images/logo.png"/>
+            
+                <h3><a href="calender.html" >Exercise log</a></h3>
+            <h3><a href="MK-day-4/overview.html" >Results</a></h3>
+            <h3><a href="chlng.html">Challenges</a></h3>
+            <h3><a href="monis-day-5/friendPage/myfriends.html">Friends</a></h3>
+            <h3><a href="monis_day-04/groupspage/mygroupsPage/html/mygroup.html">Groups</a></h3>
+                <div id="spre"><p>
+                    <!-- <a href="">email</a>
+                        <br> -->
+                    <a href="/vikalpday-3/profile.html">My accounts</a>
+                </p></div>
+               
+                </span>
+               
+                <div id="div_acc_img" >
+    
+                    <div class="child">
+    
+                        <a  href="">
+                            <img  src="https://kcdn.twiikapp.com/images/no_image.png" alt="No_image">
+                        </a>
+                    </div>
+    
+                    <div class="child">
+    
+                        <a  href="">
+                            <img  src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat-by-vexels.png" alt="No_image">
+                        </a>
+                    </div>
+    
+                    <div class="child3">
+    
+                        <a  href="">
+                            <img  src="https://tse1.mm.bing.net/th?id=OIP.vaOEu9QOsxy1mgSPwwipmQAAAA&pid=Api&P=0" alt="No_image">
+                        </a>
+                    </div>
+                    
+                  
+    
+                    <!-- <a  href="">
+                        <img  src="	" alt="No_image">
+                    </a>
+    
+                    <a  href="">
+                        <img  src="" alt="No_image">
+                    </a> -->
+                </div>
+    
+                
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div id="cnav">
+            <div id="sc_nav">
+              <p>My Challenges</p>
+              <p>Find Challenges</p>
+            </div>
+      </div>
+    </div>
+    <h1 id="sc_chl">Challenges</h1>
+    <div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="sc_slideimg" src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/ddd7f55c1864b92c4ea0334a758ad788749865dcc45376621b2124a24418d1f2.png" >
+              <!-- style="width:100%"> -->
+         
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="sc_slideimg" src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/klassikern.png" >
+              <!-- style="width:100%"> -->
+              
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="sc_slideimg" src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/6d030c9d7cb7bea585c738bfe79606d68049e35936c8605023c727e025e39891.png" >
+             
+              
+            </div>
+            
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+    <div>
+        <div id="info">
+            <div id="infobox">
+              <div>
+                <p>Search map location</p>
+                <input type="text">
+              </div>
+              <div>
+                <p>Select category</p>
+                <select name="" id="">
+                  <option value="">Show all</option>
+                  <option value="">Workouts</option>
+                  <option value="">Workout time</option>
+                  <option value="">Distance</option>
+                  <option value="">Steps</option>
+                  <option value="">Weight</option>
+                  <option value="">Measure</option>
+                  <option value="">Accomplishment</option>
+                  <option value="">Lifestyles</option>
+                  <option value="">Others</option>
+                </select>
+              </div>
+              <div>
+                <p>Challenge type</p>
+                <select>
+                  <option value="">Show all</option>
+                  <option value="">Challenge friends</option>
+                  <option value="">Challenge yourself</option>
+                </select>
+              </div>
+              <div>
+                <p>Sort</p>
+                <select>
+                  <option value="">Recommended</option>
+                  <option value="">Popular</option>
+                  <option value="">Newest</option>
+                  <option value="">Alphabetical</option>
+                </select>
+              </div>
+            </div>
+            <div id="btn">
+              <button>Update list</button>
+            </div>
+           
+    </div>
+    <div id="sC_main-box">
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/plankan_2min.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button id="sc_j">JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/plankan.png" alt="">
+            </div>
+            <div class="sc_p"><p>Gör plankan 1min varje dag</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/kakmonstret.png" alt="">
+            </div>
+            <div class="sc_p"><p>Sugar Rush - Låt bli sötsa</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/plankan_2min.png" alt="">
+            </div>
+            <div class="sc_p"><p>Gå ner 5kg i vikt</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/lose_weight_5kg.png" alt="">
+            </div>
+            <div class="sc_p"><p>Gå ner 2kg i vikt</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/lose_weight_2kg.png" alt="">
+            </div>
+            <div class="sc_p"><p>100 situps om dagen i 2</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/situps.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara 50 situps</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/situps.png" alt="">
+            </div>
+            <div class="sc_p"><p>10k SUB 45min - Löpning</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/10k_sub45.png" alt="">
+            </div>
+            <div class="sc_p"><p>25 Push Ups</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/pushups_25.png" alt="">
+            </div>
+            <div class="sc_p"><p>Drick 2 liter vatten om</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/water.png" alt="">
+            </div>
+            <div class="sc_p"><p>Ta en vit månad</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/drink.png" alt="">
+            </div>
+            <div class="sc_p"><p>10k SUB 60min - Löpning</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/10k_sub60.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/stairs.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/plankan_2min.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://shapelink-uploads.s3-eu-west-1.amazonaws.com/challenges/klassikern.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://kcdn.twiikapp.com/images/badges/goal_weight.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://kcdn.twiikapp.com/images/badges/goal_weight.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://kcdn.twiikapp.com/images/badges/goal_lifestyle.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="sc_box1">
+                <p>Challenge yourself</p>
+                <img src="https://kcdn.twiikapp.com/images/badges/goal_weight.png" alt="">
+            </div>
+            <div class="sc_p"><p>Klara plankan i 2 minuter</p></div>
+            <div class="sc_box2">
+                <div><p><strong>2520</strong></p><p>PARTICIPATING</p></div>
+                <div><p><strong>When you want</strong></p><p>STARTS</p></div>
+            </div>
+            <div class="sc_btn">
+                <button>JOIN</button>
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="footer">
+            <div id="footerR">
+                <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+                <p>All rights reserved © 2002 - 2022</p>
+                <p>Developed by Wellnesstech Labs International AB</p>
+                <a href=""><p>Contact Us - Terms & Condition</p></a>
+            </div>
+            <div id="footerL">
+                <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+                <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+                <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+                <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+                <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+</script>

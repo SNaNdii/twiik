@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worklist</title>
+</head>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#sec_navbar{
+        /* border:1px solid red;  */
+        width: 100%;
+        /* height:30px; */
+        padding:10px;
+        padding-left:130px ;
+        background-color: #f6f6f6;
+        
+    }
+    #sec_navbar a{
+        color: #3bc6db;
+        text-decoration: none;
+        margin:40px;
+    }
+    #sec_navbar :hover{
+        text-decoration: underline;
+    }
+.blue{
+    width: 180px;
+    padding: 8px 0px 8px 15px;
+    color: white;
+    background-color: rgb(13, 13, 109);
+    margin-top: 20px;
+    font-size: 15px;
+}
+.bar{
+    width: 180px;
+    color:rgb(74, 173, 230);
+    background-color:rgb(240, 240, 240);
+    margin-top: 2px;
+    padding: 8px 0px 8px 15px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.bar:hover{
+    color: black;
+    background-color: rgb(219, 217, 217);
+}
+#main{
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+ #content{
+    margin-top: 50px;
+    border:1px solid red;
+    width:auto;
+    height: auto;
+}
+#content>p{
+    font-size: 30px;
+    color: rgb(114, 109, 109);
+}
+#content>div{
+    font-size: 13px;
+}
+#summary{
+    display: flex;
+    /* border: 1px solid teal; */
+    width:800px;
+    height: auto;
+    padding: 10px;
+    margin:20px;
+    background-color:rgb(240, 240, 240);
+    border-radius: 10px;
+    
+}
+#summary div{
+ 
+   padding:0 20px;
+
+}
+#summary+p{
+    font-size: 20px;
+}
+#stats{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #stats>p{
+        color:rgb(63, 61, 61);
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    #statsTable{
+        border: 1px solid #e9e993;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffdd;
+        width: 600px;
+        height:150px;
+        /* margin-bottom: 30px; */
+        border-radius: 6px;
+        margin-top:55px;
+        
+        position: relative;
+    }
+    #statsTable>a{
+        margin: 15px;
+    }
+    #statsTable>p{
+        font-size:small;
+        padding:20px
+        
+    }
+    #innerStats{
+        position: absolute;
+        background-color: #ebebd3;
+        width:550px;
+        left:550px;
+        top:350px;
+        padding:10px;
+    }
+    #innerStats p{
+        font-size: small;;
+    }
+    #innerStats button{
+        margin-left: 300px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+tr,td{
+    padding: 10px;
+    background-color: #bdc0c0;
+    border: 1px solid rgb(197, 195, 195);
+}
+
+
+
+
+
+</style>
+<body>
+  
+    <div id="sec_navbar">
+        <a href="/cosmic-toy-4083/Results/overview.html">Overview</a>
+        <a href="/cosmic-toy-4083/MK-day-3/training.html">Training</a>
+        <a href="">Nutrition</a>
+        <a href="">Body & Health</a>
+        
+
+    </div>
+   
+      
+       <div id="main">
+           <div id="side">
+
+              <div class="blue">WORKOUTS</div>
+              <div class="bar" onclick="ncardio()">Total</div>
+              <div class="bar" onclick="ncardioGym()">Workout List</div>
+              <div class="bar" onclick="nGymClass()">Statistics by track</div>
+              <div class="bar" onclick="nlift()">Equipments</div>
+              <div class="bar" onclick="nsports()">Steps</div>
+
+              <div class="blue">Per TYPE</div>              
+              <div class="bar">Cardio</div>              
+              <div class="bar">Weight Lifting</div>          
+              <div class="bar">Cardo Gym</div>
+              <div class="bar">Gym Class</div>
+              <div class="bar">Other Sports</div>
+            
+           </div>
+           <div id="content">
+               <p id="nchange">Total Training</p>
+              <div id="summary">
+                <div>Summary</div>
+                <p>|</p>
+                <div>Workouts and time</div>
+                <p>|</p>
+                <div>Your favorite graph</div>
+            </div>
+            <p>Here you can find statistics over all your training.</p>
+            <div id="stats">
+               
+                <div id="statsTable">
+                   <p>All statistics are calculated between 2022-08-09, and today.</p> 
+                   <a href="">Edit statistics start date</a>
+                   
+                   
+                </div>
+                <div id="innerStats">
+                    <p>Edit the date from when my statistics are calculated</p>
+                    <label for="">Select date</label>
+                    <input type="date" name="" id="date">
+                    <button>Save</button>
+                </div>     
+           </div>
+
+                <div>
+                    <h5>Workouts and time</h5>
+                    <p>A statistic summary of all your workouts.</p>
+                    <h4>Total Training</h4>
+                    <table>
+                        <tr>
+                        <td></td>
+                        <th>Workout</th>
+                        <th>Time(in sec)</th>
+                        <th>Distance</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Total</td>
+                            <td>0 Workouts</td>
+                            <td>0 min</td>
+                            <td>0.00 km</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                </div>
+            </div>    
+                  
+           </div>
+
+           
+       
+    
+</body>
+</html>

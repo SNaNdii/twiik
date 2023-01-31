@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+   
+  </style>
+  <body>
+    <button id="ModalBtn" class="button">Click Here</button>
+
+    <div id="simpleModal" class="modal">
+      <div id="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p id="log1">LOGIN</p>
+        <div id="logDiv">
+          <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+          
+        <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+       
+        <button id="loginBtn" onclick="login1()">Login</button>
+        </div>
+        <div id="LoginFc">Login with Facebook</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let content = document.querySelector("#simpleModal");
+  let openBtn = document.querySelector("#ModalBtn");
+  let closeBtn = document.querySelector(".closeBtn");
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  function openModal() {
+    console.log("clicked");
+    content.style.display = "block";
+  }
+  function closeModal() {
+    content.style.display = "none";
+  }
+</script>
+<script src="login.js"></script>

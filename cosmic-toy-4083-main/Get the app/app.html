@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="/login/style.css">
+    <title>Get The App</title>
+</head>
+<style>
+    /* navbar section */
+    * {
+margin: 0px;
+padding: 0px;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 40px;
+letter-spacing: 0.5px;
+}
+#background {
+/* background-image: url(https://www.shapelink.com/images/startpage.jpg); */
+width: 100%;
+height: 60%;
+background-size: cover;
+background-attachment: fixed;
+padding: 75px 0px 50px;
+z-index: 1;
+}
+.navbar {
+width: 100%;
+position: fixed;
+background-color:black; 
+font: 12px lato, Arial, Helvetica, sans-serif;
+color: white;
+display: flex;
+align-items: center;
+padding: 20px;
+z-index: 1000;
+box-sizing: border-box;
+transition: all 0.2s ease-in-out;
+margin-top: -75px;
+}
+.bgColor{
+background-color:rgb(41,41,41);
+opacity: 0.9;
+color:black;
+
+}
+.nav {
+width: 50%;
+margin-left: 600px;
+display: flex;
+/* border: 1px solid red; */
+gap: 50px;
+font-size: 20px;
+}
+.navbar > div > img {
+width: 35%;
+/* border: 1px solid green; */
+margin-left: 30px;
+cursor: pointer;
+margin-bottom: 10px;
+}
+.nav > p {
+font-size: 16px;
+font-weight: bold;
+color: white;
+padding-top: 15px;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+/* text-decoration: none; */
+}
+.nav > p:hover {
+text-decoration: underline;
+}
+
+.nav > button {
+width: 30%;
+height: 45px;
+color: #ffffff;
+background-color: #5a3bdb;
+border-radius: 30px;
+padding: 8px 10px;
+margin-top: 6px;
+cursor: pointer;
+font-size: 16px;
+}
+.nav > button:hover {
+background-color: #673ab7;
+}
+.bar {
+width: 30%;
+}
+.bar a img {
+width: 50%;
+}
+</style>
+<style>
+
+    /* footer section */
+    #footer{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        
+        background: #121451;
+        height: auto;
+        width: 100%;
+        display: flex;
+        
+    }
+   
+   #footerR{
+    /* border: 1px solid red; */
+    width: auto;
+    max-width: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-left: 50px;
+   }
+   #footerL{
+    /* border: 1px solid yellow; */
+    vertical-align: middle;
+    padding: 80px;
+    margin-left: 250px;
+   }
+   #footerL>a>img{
+    height: 50px;
+    padding: 10px;
+    
+   }
+   #footerR>p{
+      color: #BBBBBB;
+   }
+   #footerR>a{
+    text-decoration: none;
+    color: white;
+   }
+   #footerR>img{
+    width: 200px;
+   }
+  
+    
+</style>
+<body>
+    <div id="background">
+        <!-- start navbar-->
+        <div id="snav" class="navbar">
+            <div class="bar">
+                <img src="https://kcdn.twiikapp.com/images/logo.png">
+            </div>
+            <div class="nav">
+            <p><a href="/Get the app/app.html">Get the app</a></p>
+            <p><a href="/contacts/contacts.html">Contact</a></p>
+            <p id="ModalBtn"><a>Login</a></p>
+            <button><a href="/signup.html">Create Account</a></button>
+            </div>
+        </div>
+        <!-- login pop up -->
+        <div id="simpleModal" class="modal">
+            <div id="modal-content">
+              <span class="closeBtn">&times;</span>
+              <p id="log1">LOGIN</p>
+              <div id="logDiv">
+                <input type="text" name="" id="loginUsername" class="loginInp" placeholder="username_or_email">
+                
+              <input type="password" name="" id="loginPassword" class="loginInp" placeholder="Password">
+             
+              <button id="loginBtn" onclick="login1()">Login</button>
+              </div>
+              <div id="LoginFc">Login with Facebook</div>
+            </div>
+          </div>
+    <!-- navbar -->
+
+    <div id="top"></div>
+    <div id="main">
+         <img id="mid" src="https://kcdn.twiikapp.com/images/gettheapp.png" alt="">
+ 
+          <div id="details">
+                <h2>DOWNLOAD TWIIK TODAY</h2>
+                <div id="underline"> </div>
+                <p>As a member you will be able to log all your workouts, track results,<br> follow programs and challenge friends and join groups.</p>
+                <img src="https://kcdn.twiikapp.com/images/language/en/appstore_button.png" alt="">
+                <img src="https://kcdn.twiikapp.com/images/language/en/googleplay_button.png" alt="">
+          </div>
+          
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div id="footerR">
+            <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
+            <p>All rights reserved © 2002 - 2022</p>
+            <p>Developed by Wellnesstech Labs International AB</p>
+            <a href=""><p>Contact Us - Terms & Condition</p></a>
+        </div>
+        <div id="footerL">
+            <a href="https://www.facebook.com/twiikme/"><img src="https://kcdn.twiikapp.com/images/icon_facebook.png" alt="Icon_facebook"></a>
+            <a href="https://www.instagram.com/twiik.me/"><img src="https://kcdn.twiikapp.com/images/icon_instagram.png" alt="Icon_instagram"></a>
+            <a href="https://www.linkedin.com/company/twiik/"><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png" alt="Icon_linkedin"></a>
+            <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/icon_apple.png" alt="Icon_apple"></a>
+            <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"><img src="https://kcdn.twiikapp.com/images/icon_android.png" alt="Icon_android"></a>
+        </div>
+    </div>
+       
+</body>
+</html>
+<script>
+    function changeBg(){
+    var navbar = document.getElementById('snav')
+    var scrollValue = window.scrollY;
+    // console.log(scrollValue);
+
+    if(scrollValue <150 ){
+        navbar.classList.remove('bgColor')
+    }else{
+        navbar.classList.add('bgColor');
+    }
+}
+
+window.addEventListener('scroll',changeBg)
+</script>
+<script>
+    let content = document.querySelector("#simpleModal");
+    let openBtn = document.querySelector("#ModalBtn");
+    let closeBtn = document.querySelector(".closeBtn");
+  
+    openBtn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+  
+    function openModal() {
+      console.log("clicked");
+      content.style.display = "block";
+    }
+    function closeModal() {
+      content.style.display = "none";
+    }
+  </script>
+  <script src="./login/login.js"></script>
