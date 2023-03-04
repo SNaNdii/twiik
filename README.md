@@ -2,7 +2,7 @@
 
 ![Logo](https://kcdn.twiikapp.com/images/logo.png)
 
-# About lybrate-clone
+# About Twiik-clone
 
 Twiik App is a digital fitness log and coach that's always with you. As a member you can log your workouts, track results, follow programs, boost and challenge friends and join social groups for motivation.With The Twiik app you can easily find lots of workout programs to follow. Find the program that suits your needs.
 <br>
