@@ -23,8 +23,8 @@ Javascript, HTML, CSS
 <a href="https://github.com/lucyy123">Monis Khan</a>
 <a href="https://github.com/mohitd427">Mohit Kumar</a>
 
-(![shapelink](https://user-images.githubusercontent.com/105062279/212536664-0eee2fbb-ac0b-4581-b8c7-e3b49b65db76.png)
-(![image](https://user-images.githubusercontent.com/108002752/222920874-b3595918-6755-4899-96f3-d0725374fb55.png)
+![shapelink](https://user-images.githubusercontent.com/105062279/212536664-0eee2fbb-ac0b-4581-b8c7-e3b49b65db76.png)
+![image](https://user-images.githubusercontent.com/108002752/222920874-b3595918-6755-4899-96f3-d0725374fb55.png)
 
 
 ## Features
@@ -38,7 +38,10 @@ Javascript, HTML, CSS
 ## Area of Resposibility
 
 - Calender page,
-- Routines, tracks, equipments
+- My things page,
+- Routines page,
+- Track page,
+- Equipment & Import training
 
 
 
