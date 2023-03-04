@@ -15,12 +15,13 @@ I worked on this project during unit-4 construct week at Masai School with the h
 Javascript, HTML, CSS
 
 ## Deployed Link
-<a href="twiik.vercel.app">Vercel</a>
+You can check our project here :- <a href="twiik.vercel.app">twiik_website_clone</a>
 
 ## Collaborators
+<a href="https://github.com/SNaNdii">Nandita Singh</a><br>
 <a href="https://github.com/vikalp1999">Vikalp Shandialya</a><br>
 <a href="https://github.com/Sam202003">Samrudhhi Chhavan</a><br>
-<a href="https://github.com/lucyy123">Monis Khan</a>
+<a href="https://github.com/lucyy123">Monis Khan</a><br>
 <a href="https://github.com/mohitd427">Mohit Kumar</a>
 
 ![shapelink](https://user-images.githubusercontent.com/105062279/212536664-0eee2fbb-ac0b-4581-b8c7-e3b49b65db76.png)
